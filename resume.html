@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resumes</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
-  <a href = "#main">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+  <a href = "#main" class="skip-link">Skip to Main Content</a>
+      <div class="header-container">  
+        <img src="images/logo-msi.png" alt="UMSI Logo" class="logo">
         <nav>
-            <ul>
+            <ul class="nav-menu">
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "resume.html">Resumes</a></li>
                 <li><a href = "networking.html">Networking & Connections</a></li>
                 <li><a href = "career.html">Career Exploration</a></li>
             </ul>
         </nav>
-        <h1>Resume Support</h1>
+      </div>
+        
     </header>
+    <h1>Resume Support</h1>
 
   <main id="main">
   
-  <section>
+  <section class="section-card">
     <h2>Craft a Resume that Tells Your Story</h2>
     <p>
       Your resume is often your first impression—an opportunity to highlight your unique strengths, skills, and experiences to potential employers. Whether you’re starting from scratch or looking to polish an existing resume, these resources are here to help you every step of the way.
@@ -50,32 +54,32 @@
 
   <section>
     <h2>Resume Resources</h2>
-    <ul>
-      <li>
+    <div class="feature-grid">
+      <div class="feature-card">
         <a href="https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0" target="_blank">
           UMSI Resume Guide and Rubric
         </a> <br>
         Comprehensive UMSI guide including tips, formatting rules, and sample accomplishments.
-      </li>
-      <li>
+      </div>
+      <div class="feature-card">
         <a href="https://docs.google.com/document/d/1-EVZYH_Fic4mfLVGOXyHTSeRwBWmmi2WHSgGDLGGPEs/edit?tab=t.0" target="_blank">
           Writing Effective Resume Bullets
         </a> <br>
         Learn how to describe your work and impact in ways employers notice.
-      </li>
-      <li>
+      </div>
+      <div class="feature-card">
         <a href="https://docs.google.com/document/d/1vJMfgw9nwpHN9Sy0L0RP0aNBbaDSsiLPc2vy-doac6s/edit?tab=t.0" target="_blank">
           Resume Rubric
         </a> <br>
         Evaluate your resume using the same criteria as UMSI's Career Development Office.
-      </li>
-      <li>
+      </div>
+      <div class="feature-card">
         <a href="https://docs.google.com/document/d/1vJMfgw9nwpHN9Sy0L0RP0aNBbaDSsiLPc2vy-doac6s/edit?tab=t.0" target="_blank">
           Application Materials: Workshops and More
         </a> <br>
         Attend a Resume Refresh workshop, review video tutorials, or access additional templates.
-      </li>
-    </ul>
+      </div>
+    </div>
     <p>
       Ready for review? <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank">Book a resume review appointment with a CDO Career Coach</a>.
     </p>
@@ -83,24 +87,32 @@
 
   <section>
     <h2>Resume FAQ</h2>
-    <ul>
-      <li>
-        <strong>How long should my resume be?</strong><br>
-        For most UMSI students and new grads, one page is best. More experienced professionals may require two pages.
-      </li>
-      <li>
-        <strong>Do I need a different resume for each application?</strong><br>
-        It's wise to tailor your resume to the requirements and keywords of each opportunity.
-      </li>
-      <li>
-        <strong>Is it okay to include coursework or student projects?</strong><br>
-        Absolutely! UMSI coursework and projects are valued by employers, especially if they show relevant skills and impact.
-      </li>
-      <li>
-        <strong>How often should I update my resume?</strong><br>
-        Update your resume every semester, after major projects, or whenever you gain a new role or responsibility.
-      </li>
-    </ul>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">
+          <strong>How long should my resume be?</strong><br>
+          For most UMSI students and new grads, one page is best. More experienced professionals may require two pages.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <strong>Do I need a different resume for each application?</strong><br>
+          It's wise to tailor your resume to the requirements and keywords of each opportunity.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <strong>Is it okay to include coursework or student projects?</strong><br>
+          Absolutely! UMSI coursework and projects are valued by employers, especially if they show relevant skills and impact.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <strong>How often should I update my resume?</strong><br>
+          Update your resume every semester, after major projects, or whenever you gain a new role or responsibility.
+        </div>
+      </div>
+    </div>
   </section>
           <!-- Content taken & modified from UMGPT with the prompt, "for the same content write me some intro content and resources for a resume page" - this was after I had asked for content for the home page.
         UMGPT. (2025). UMGPT (GPT-4.1 August 25th version) [Large language model]. -->
@@ -114,6 +126,7 @@
     <p>
       Here are a few ways to get started:
     </p>
+    <div class="section-card">
     <ul>
       <li><strong>Brainstorming Example Prompts:</strong><br>1. Copy/paste a job description and ask "Summarize the most important keywords and skills from this job description"
         <br>2. "I am about to apply for a job as an account manager at an advertising agency and I'm working on my resume. Can you ask me questions about my marketing internship to help me generate ideas for my bullet points?"</li>
@@ -127,6 +140,7 @@
         <br>3. Upload your resume then ask, "Optimize my resume for a job as a financial analyst."
       </li>
     </ul>
+    </div>
     <p>
       Note: We recommend using <a href='https://genai.umich.edu/'>U-M GPT</a> to keep your information secure. If you use other tools, we recommend removing any personal information. It is also important to make sure you do not include any sensitive information from your employers and you're aware of any NDAs you have signed.
     </p>
@@ -134,18 +148,23 @@
 
   <section>
     <h2>Related Topics</h2>
-    <ul>
-      <li><a href="networking.html">Networking & Connections</a> </li>
-      <li><a href="career.html">Career Exploration</a></li>
-    </ul>
+      <div class="path-grid">
+        <a href="networking.html" class="path-card">Networking & Connections</a>
+        <a href="career.html" class="path-card">Career Exploration</a>
+      </div>
   </section>
-
-
-    
+ 
     </main>
-    <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
-        </footer>
+
+    <footer class="site-footer">
+    <div class="footer-container">
+      <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI logo" class="footer-logo">
+      <div class="footer-text">
+      <p>University of Michigan School of Information</p>
+      <a href="https://umich.instructure.com/courses/137916" class="footer-link"> UMSI Career Development Office</a>
+      </div>
+    </div>
+    </footer>
     
 </body>
 

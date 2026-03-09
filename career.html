@@ -3,27 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Life</title>
+    <title>Career Exploration</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
         <header>
-  <a href = "#main">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+  <a href = "#main" class="skip-link">Skip to Main Content</a>
+        <div class="header-container">
+        <img src="images/logo-msi.png" alt="UMSI Logo" class="logo">
         <nav>
-            <ul>
+            <ul class="nav-menu">
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "resume.html">Resumes</a></li>
                 <li><a href = "networking.html">Networking & Connections</a></li>
                 <li><a href = "career.html">Career Exploration</a></li>
             </ul>
         </nav>
-    <h1>Career Exploration</h1>
+        </div>
 
     </header>
+    <h1>Career Exploration</h1>
 
     <main id="main">
-    <section>
+    <section class="section-card">
         <h2>Explore Your Career Pathways</h2>
         <p>
           Career exploration is a vital step in shaping your professional journey. It involves researching industries, roles, and companies to find the best fit for your skills, interests, and values.
@@ -48,16 +51,22 @@
 
     <section>
         <h2>Related Topics</h2>
-        <ul>
-            <li><a href="resume.html">Resume Support</a> </li>
-            <li><a href="networking.html">Networking & Connections</a></li>
-        </ul>
+        <div class="path-grid">
+            <a href="resume.html" class="path-card">Resume Support</a>
+            <a href="networking.html" class="path-card">Networking & Connections</a>
+        </div>
     </section>
 
     </main>
 
-    <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
+    <footer class="site-footer">
+    <div class="footer-container">
+      <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI logo" class="footer-logo">
+      <div class="footer-text">
+      <p>University of Michigan School of Information</p>
+      <a href="https://umich.instructure.com/courses/137916" class="footer-link"> UMSI Career Development Office</a>
+      </div>
+    </div>
     </footer>
 
 </body>
