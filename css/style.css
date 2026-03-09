@@ -28,12 +28,12 @@ header{
     display: flex;
     flex-direction:column;
     background-color: #00274C;
-    align-items: center;
+    width: 100%;
+    align-items: stretch;
 }
 
 .logo{
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin: 40px auto 20px auto;
     padding: 5px;
     width: 350px;
 }
@@ -46,6 +46,7 @@ header{
     margin-top:10px;
     text-align:center;
     margin: 0;
+    width: 100%;
     background-color: #00274C;
     border-top: 1px solid #FFFFFF;
 }
@@ -68,8 +69,6 @@ header{
     background-color:#FFCB05;
     color:#00274C;
 }
-
-
 
 .site-footer{
     background-color:#00274C;
@@ -218,4 +217,18 @@ h3{
 .faq-answer{
     color: #000;
     line-height:1.5;
+}
+
+@media (min-width:768px){
+    main{
+        max-width:900px;
+    }
+
+    section{
+        margin-bottom:40px;
+    }
+
+    iframe{
+        max-width:720px;
+    }
 }
