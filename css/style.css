@@ -1,3 +1,19 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    padding-top: 8px;
+}
+
 .skip-link{
     position: absolute;
     left: -9999px;
@@ -19,9 +35,7 @@
 }
 
 header{
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    position: static;
 }
 
 .header-container {
@@ -70,6 +84,13 @@ header{
     color:#00274C;
 }
 
+.nav-menu a.active{
+    background-color: #FFCB05;
+    color: #00274C;
+    font-weight: bold;
+    border-bottom: 3px solid #00274C;
+}
+
 .site-footer{
     background-color:#00274C;
     color:white;
@@ -96,8 +117,7 @@ header{
 }
 
 main{
-    padding-left:16px;
-    padding-right:16px;
+    padding:16px;
     max-width:700px;
     margin:auto;
 }
@@ -118,8 +138,7 @@ iframe{
 }
 
 h1{
-    padding-left:16px;
-    padding-right:16px;
+    padding:16px;
     color:#00274C;
 }
 
@@ -219,16 +238,76 @@ h3{
     line-height:1.5;
 }
 
+ol, ul {
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.path-card, .feature-card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.path-card:hover, .feature-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
 @media (min-width:768px){
+    .header-container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+    }
+
+    .logo{
+        width: 200px;
+        margin: 0;
+    }
+
+    .nav-menu{
+        display: flex;
+        gap: 30px;
+        border: none;
+    }
+
+    .nav-menu li{
+        border: none;
+    }
+
     main{
-        max-width:900px;
+        max-width: 1200px;
     }
 
-    section{
-        margin-bottom:40px;
+    .feature-grid{
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    iframe{
-        max-width:720px;
+    .path-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .section-content{
+        display: flex;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .text-content{
+        flex: 1.5;
+    }
+
+    .section-content img{
+        flex: 1;
+        max-width: 300px;
+    }
+
+    .side-content{
+        flex: 1;
+    }
+
+
+    .section-card img{
+        width: 40%;
     }
 }
